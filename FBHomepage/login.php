@@ -5,7 +5,7 @@
   <title>Falešný FB - vaše heslo</title>
 </head>
 <body>
-	<h2>Při běžném útoku by jste byli automaticky přesměrování, tady si ale nejdřív ukážeme Vaše heslo. ;)</h2>
+	<h2>Při běžném útoku byste byli automaticky přesměrování, tady si ale nejdřív ukážeme Vaše heslo. ;)</h2>
 	<script type="text/javascript">
 		<?php
 			$email = $_POST["email"];
