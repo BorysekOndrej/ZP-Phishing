@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<script type="text/javascript">
+		var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1; /* https://stackoverflow.com/questions/4565112/javascript-how-to-find-out-if-the-user-browser-is-chrome */
+		$(document).ready(function(){
+			if(is_chrome){ /* major browser + clones which *hopefuly* did not change look of search dialog */
+				$searchbar = $('#searchbar_chrome');
+				$searchbox = $('#searchbox_chrome');
+			}else{ /* second major browser + anything else (it is just proof of concept…) */
+				$searchbar = $('#searchbar_firefox');
+				$searchbox = $('#searchbox_firefox');
+			}
+			/* with just these two distinct versions i'm properly covering about 86% of visitors */
+
+			$(window).keydown(function(e){ 
+				if((e.which == "70" && (e.metaKey||e.ctrlKey))){ /* https://stackoverflow.com/questions/6680213/is-there-a-way-to-detect-find-on-the-page-searches-in-javascript */
+					e.preventDefault();
+					$searchbar.slideDown('fast');
+					$searchbox.focus()
+				}
+				if(e.keyIdentifier == "U+001B" || e.keyCode == 27){
+					e.preventDefault();
+					$searchbar.slideUp('fast');
+				}
+			});
+
+			$searchbox.change(function(){
+				alert('Obsah vyhledávacího pole je: ' + $searchbox.val() );
+			});
+		});
+	</script>
+	<style type="text/css">
+		.searchbar {
+			display: none; /* just for case the css file did not yet load */
+		}
+	</style>
+</head>
+<body>
+	<div class="searchbar" id="searchbar_chrome"> <!-- chrome -->
+		<input type="text" class="searchbox" id="searchbox_chrome">
+		<input type="button" class="navbutton_chrome button_previous" id="button_previous_chrome"> <!-- function will be added in later version -->
+		<input type="button" class="navbutton_chrome button_next" id="button_next_chrome"> <!-- function will be added in later version -->
+		<input type="button" class="navbutton_chrome button_close" id="button_close_chrome"> <!-- function will be added in later version -->
+	</div>
+	<div class="searchbar" id="searchbar_firefox"> <!-- firefox -->
+		<input type="text" class="searchbox" id="searchbox_firefox">
+		<input type="button" class="navbutton_firefox button_previous" id="button_previous_firefox"> <!-- function will be added in later version -->
+		<input type="button" class="navbutton_firefox button_next" id="button_next_firefox"> <!-- function will be added in later version -->
+		<div id="unused_icons_firefox"></div> <!-- i'm not implementing those; nobody ever uses them -->
+		<input type="button" class="navbutton_firefox button_close" id="button_close_firefox">  <!-- function will be added in later version -->
+	</div>
+	<h2>Lorem Ipsum</h2>
+	<ul>
+		<li>gdaga</li>
+		<li>gasfaf</li>
+	</ul>    
+</body>
+</html>
