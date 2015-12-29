@@ -100,3 +100,8 @@
 .searchbar {
 	display: none;
 }
+
+.highlight {
+	background-color: yellow;
+}
+
