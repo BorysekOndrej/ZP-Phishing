@@ -5,7 +5,7 @@ Prozatím nejsou všechny (asi) a rozhodně nejsou kompletní, budu je postupně
 
 Dema dostupná [zde](https://zmp.borysek.eu):
 
-[Demo FB phishing page](https://facebok.com.borysek.eu):
+[Demo FB phishing page](https://facebok.com.borysek.eu):  
 [Fakesearch page](https://fakesearch.borysek.eu):
 
 ## Disclaimer
@@ -16,4 +16,3 @@ Práce je zpracována jako edukační materiál v boji proti phishingu a autor s
 Praktický výzkum provedený autorem pro účely tohoto díla proběhl v laboratorních podmínkách, pokud není v jeho popisu explicitně zmíněno jinak. Experimenty, které jsou vystaveny na webových stránkách, na které je z této práce odkazováno, jsou vždy řádně označeny autorem a probíhají na explicitně zmíněných doménách. Těmi jsou: [borysek.eu](https://borysek.eu), [twitch.sk](http://twitch.sk), [50f1a1eefaf50f79a0525a73d6f712e6.eu](http://50f1a1eefaf50f79a0525a73d6f712e6.eu) a jejich subdomény.
 
 Všichni účastníci praktických experimentů byli seznámeni s cíli, metodami a možnými riziky experimentů. Svůj souhlas s účastí v experimentu za těchto podmínek písemně stvrdili.
-
