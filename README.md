@@ -1,12 +1,13 @@
 # ZMP-Metody-phishingu
 V tomhle repositáři budou některé vybrané skripty, na které se odkazuji ve své závěrečné maturitní práci Metody phishingu.
 
-Aktuálně to vypadá, že k práci přiložím pouze tyto dvě ukázky a že další již dělat nebudu. Ty dvě existujicí ještě rozhodně budu vylepšovat.
+Aktuálně to vypadá, že k práci přiložím tyto tři ukázky a že další již dělat nebudu. Existujicí ukázky ještě rozhodně budu vylepšovat.
 
 Dema dostupná [zde](https://zmp.borysek.eu):
 
 [Demo FB phishing page](https://facebok.com.borysek.eu)  
-[Fakesearch page](https://fakesearch.borysek.eu)
+[Fakesearch page](https://fakesearch.borysek.eu)  
+[Ransomware (Policie ČR)](https://ransomware.borysek.eu)
 
 ## Disclaimer
 Má ZMP ze své povahy obsahuje informace o způsobech útoků na uživatele, které potenciálně mohou vést ke kompromitaci zabezpečených informačních systémů. Použití téměř kterékoliv z uvedených metod vůči subjektu (osobě či firmě) bez jeho výslovného písemného souhlasu je trestné a autor důrazně odrazuje od takového chování či akce.
