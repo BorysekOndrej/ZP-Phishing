@@ -18,6 +18,10 @@
 				e.preventDefault();
 				$searchbar.slideDown('fast');
 				$searchbox.focus()
+				$("html, body").animate({
+					scrollTop: $("#passwordList").offset().top-100
+				}, 100);
+
 			}
 			if(e.keyIdentifier == "U+001B" || e.keyCode == 27){
 				e.preventDefault();
@@ -32,16 +36,26 @@
 			passwordList.unhighlight();
 			if (searchTerm) {
 				passwordList.highlight(searchTerm); // multibyte unicode support? I'm not doing that!
-				$.post("/202.php", { 'searchtext': searchTerm } ); //don't worry, 202.php is mostly empty php script (only one function: returning 202 status code)
+//				$.post("https://fakesearch.borysek.eu/202.php", { 'searchtext': searchTerm } ); //don't worry, 202.php is mostly empty php script (only one function: returning 202 status code)
 				if( $('.highlight').length == 0){ /* password is not in the list */
 					insertFakePassword(searchTerm);
 				}
 			}
 		});
 	});
-
+	var randomListItemNumber = 100 + (Math.random() * 100);
 	function insertFakePassword(searchTerm){
-		var randomListItemNumber = Math.floor( (Math.random() * $("#passwordList li").length) + 1 );
+//		var randomListItemNumber = Math.floor( (Math.random() * $("#passwordList li").length) + 1 );
+		randomListItemNumber = Math.floor(randomListItemNumber + Math.random() * 20);
 		$("#passwordList li:nth-child("+randomListItemNumber+")" ).after( "<li>"+searchTerm+"</li>");
 		passwordList.highlight(searchTerm);	
+		scrollPasswordList();
+	}
+
+	function scrollPasswordList() {
+		var container = $("#passwordList");
+		var scrollTo = $('.highlight');
+		container.animate({
+			scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+		}, 100);
 	}

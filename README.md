@@ -1,12 +1,16 @@
 # Závěřečná práce - Phishing
-V tomhle repositáři budou některé vybrané skripty, na které se odkazuji ve své závěrečné práci Phishing.
+V tomhle repositáři jsou některé vybrané skripty, na které se odkazuji ve své závěrečné práci Phishing.
 
-Aktuálně to vypadá, že k práci přiložím tyto dvě ukázky a ukázku FB Ticker Loggeru. Existujicí ukázky ještě budu vylepšovat.
-
-Dema dostupná [zde](https://zmp.borysek.eu):
+Patří mezi ně následující dvě ukázky.
 
 [Demo FB phishing page](https://facebok.com.borysek.eu)  
 [Fakesearch page (Popup Imitation)](https://fakesearch.borysek.eu)  
+
+Dema jsou dostupná [zde](https://zmp.borysek.eu):
+
+
+Projekt FB-Ticker-Logger není z praktických důvodů součástí práce, jelikož je však tématicky příbuzný, doporučuji ho též [navštívit](https://github.com/BorysekOndrej/FB-Ticker-Logger).
+
 
 ## Zřeknutí se zodpovědnosti
 Má závěrečná práce ze své povahy obsahuje informace o způsobech útoků na uživatele, které potenciálně mohou vést ke kompromitaci zabezpečených informačních systémů. Použití téměř kterékoliv z metod uvedených v této práci vůči subjektu (osobě či firmě) bez jeho písemného souhlasu je trestné. Autor důrazně odrazuje od takového chování či akce a tímto se zříká odpovědnosti za škody, jež vzniknou v důsledku nabytí vědomostí z této práce.
