@@ -52,7 +52,7 @@
 /* CHROME */
 
 #searchbar_chrome {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	right: 30px;
 	width: 325px;
@@ -69,7 +69,7 @@
 #searchbox_chrome {
 	position: absolute;
 	top: 3px;
-	right: 76px;
+	right: 79px;
 	height: 25px;
 	width: 245px;
 }
@@ -99,9 +99,14 @@
 /* COMMON */
 .searchbar {
 	display: none;
+	z-index: 100000;
 }
 
 .highlight {
 	background-color: yellow;
 }
 
+
+#passwordList li {
+	list-style-type: none;
+}
