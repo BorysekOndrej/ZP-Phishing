@@ -4,7 +4,7 @@ V tomhle repositáři jsou některé vybrané skripty, na které se odkazuji ve 
 Patří mezi ně následující dvě ukázky.
 
 [Demo FB phishing page](https://facebok.com.borysek.eu)  
-[Fakesearch page (Popup Imitation)](https://fakesearch.borysek.eu)  
+[Fakesearch page (Popup Imitation)](http://fakesearch.borysek.eu)  
 
 Dema jsou dostupná [zde](https://zmp.borysek.eu):
 
